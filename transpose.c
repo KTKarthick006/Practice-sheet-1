@@ -1,51 +1,33 @@
 #include<stdio.h>
 #include<stdbool.h>
 
-int temp;
 
-void swap(int *x,int *y){
-    temp = *x;
-    *x = *y;
-    *y = temp;
-}
 
-void bubblesort(int arr[],int n){
-    int i,j;
-    bool swapped;
-    for (i=0;i<n-1;i++){
-        swapped = false;
-        for (j=0;j<n-i-1;j++){
-            if (arr[j]>arr[j+1]){
-                swap(&arr[j],&arr[j+1]);
-                swapped = true;
-            }
-        }
-        if (swapped == true){
-            break;
+void transpose(int n, int m, int a[n][m], int b[m][n]){
+    for(int i=0; i<n; i++){
+        for(int j=0; j<m; j++){
+            b[j][i] = a[i][j];
         }
     }
 }
 
-void printarray(int arr[], int size){
-    int i;
-    for(i=0;i<size;i++){
-        printf("%d",arr[i]);
+void main(){
+    int n, m;
+    printf("Enter the number of rows and columns: ");
+    scanf("%d %d", &n, &m);
+    int a[n][m], b[m][n];
+    printf("Enter the elements of the array: ");
+    for(int i=0; i<n; i++){
+        for(int j=0; j<m; j++){
+            scanf("%d", &a[i][j]);
+        }
     }
-}
-
-int main(){
-    int arr[20];
-    int i,j,num,n;
-    printf("Enter the number of elements: ");
-    scanf(" %d",&num);
-    printf("Enter the elements: ");
-    for(i=0;i<num;i++){
-        scanf(" %d",&arr[i]);
+    transpose(n, m, a, b);
+    printf("The transpose of the array is: \n");
+    for(int i=0; i<m; i++){
+        for(int j=0; j<n; j++){
+            printf("%d ", b[i][j]);
+        }
+        printf("\n");
     }
-    for(j=0;j<num;j++){
-        printf("%d ",arr[j]);
-    }
-    n = sizeof(arr)/sizeof(arr[0]);
-    bubblesort(arr,n);
-    printarray(arr,n);
 }
