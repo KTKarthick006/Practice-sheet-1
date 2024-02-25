@@ -1,0 +1,50 @@
+
+1)Write a C code to check whether the entered year is Leap year or not.
+2)A certain grade of steel is graded according to the following conditions:
+(i)	Hardness must be greater than 60 
+(ii)	Carbon content must be less than 0.9 
+(iii)	Tensile strength must be greater than 6000 
+The grades are as follows: 
+(i)Grade is 10 if all three conditions are met 
+(ii)Grade is 9 if conditions (i) and (ii) are met 
+(iii)Grade is 8 if conditions (ii) and (iii) are met 
+Given the values of hardness, carbon content and tensile strength of the steel, write a C code to output the grade of the steel. 
+3) Using Switch statement, write a C program that displays the following menu for the food items available to take order from the customer:
+• B= Burger
+• F= French Fries
+• P= Pizza
+• S= Sandwiches
+The program inputs the type of food and quantity. It finally displays the total charges for the order according to following criteria:
+• Burger = Rs. 200
+• French Fries= Rs. 50
+• Pizza= Rs. 500
+• Sandwiches= Rs. 150
+4) Write a C code to print the Fibonacci series of ‘n’ numbers.
+5) Write a C code to generate the Armstrong numbers between 1 and 500. 
+6) Mercy electronics shop has given festival offer that is 12% off, on every purchase.  Following are the prices of the electronic items.  4GB Transcend pen drive is Rs.500/-, Sony Head set is Rs 1000/-, Samsung tablet is Rs 3500/- and Seagate Hardisk 1TB is Rs 4000/-. Calculate the total bill amount to pay by doing a purchase in Mercy electronics shop. In this case, price of pendrive after discount is Rs. 440 (that is Rs.500-Rs.60).
+7) Write a C code 
+a) To find the length of the string.
+b) To check the Occurrences of a Character.
+c) To check if string is Palindrome.
+d) To count number of white spaces.
+8) Write a C code for Matrix addition for 2X2 matrix. Get input for matrix A and B, 
+a) Print the addition result as matrix C.
+b) Print the Transpose of the resultant matrix.
+c) Print the determinant of the resultant matrix.
+9) Write a 'C' Program to calculate sum of major and minor diagonal elements of m X n matrix using dynamic memory allocation and print “Same” if both the sums are equal and “Not Same” if both the sums are not equal.
+10) Write a program in C to compute the sum of all elements in an array using pointers.
+11)Write a 'C' program to accept book details for 'n' books as book_title, author, publisher and cost. Assign the accession number to each book in increasing order. Display these details as,
+
+1. Books of a specific author
+2. Books by a specific Publisher
+3. All Books costing Rs. 500 and above.
+4. All Books.
+12)Write a menu driven program in C to create a structure employee having fields empid, empname, salary. Accept the details of 'n' Employees from user and perform the following operations using function.
+
+- Search by Emp-Id
+- Display All
+- Display Names of Employee having Salary > 10000.
+
+
+
+
